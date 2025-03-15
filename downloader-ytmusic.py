@@ -2,9 +2,9 @@ import yt_dlp
 import colorama
 from colorama import Fore
 
-colorama.init(autoreset=True)  # Inisialisasi colorama agar warna reset otomatis
+colorama.init(autoreset=True)
 
-downloaded_links = set()  # Menyimpan link yang sudah didownload
+downloaded_links = set()
 
 def download_audio(url):
     options = {
@@ -14,7 +14,7 @@ def download_audio(url):
             'preferredcodec': 'mp3',
             'preferredquality': '192',
         }],
-        'outtmpl': '%(title)s.%(ext)s',  # Nama file sesuai judul video
+        'outtmpl': '%(title)s.%(ext)s',
     }
 
     with yt_dlp.YoutubeDL(options) as ydl:
@@ -22,17 +22,17 @@ def download_audio(url):
 
 def repeat():
     while True:
-        link = input("Masukkan link YouTube (atau ketik 'exit' untuk keluar): ").strip()
+        link = input("Enter YouTube link (or type 'exit' to exit): ").strip()
         
         if link.lower() == 'exit':
-            print("Keluar dari program.")
+            print("exit the program.")
             break
 
         if link in downloaded_links:
-            print(Fore.YELLOW + "⚠ Link ini sudah pernah didownload! ⚠")
+            print(Fore.YELLOW + "⚠ This link has already been downloaded! ⚠")
         else:
             download_audio(link)
             downloaded_links.add(link)
-            print("Download selesai!\n")
+            print("Download complete!\n")
 
 repeat()
