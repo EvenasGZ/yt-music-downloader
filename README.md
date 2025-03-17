@@ -7,3 +7,6 @@
 
 🎧 Enjoy high-quality music downloads with fast speed and no hassle!  
 Made by: ChatGPT 😂
+
+download ffmpeg manually in https://www.gyan.dev/ffmpeg/builds/
+pip install yt-dlp
