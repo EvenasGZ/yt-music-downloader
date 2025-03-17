@@ -1,3 +1,7 @@
+UPDATE 1. 1  
+User Experience: You can add mmultiple link up to 10 in once  
+UI: Added user interface if you can't use terminal, just run the code and a popup will be open  
+  
 🎵 **YouTube Music Downloader**  
 🚀 **Key Features:**  
 ✅ Crystal Clear Audio – Download songs at 192 kbps, higher than Spotify Free (160 kbps).  
@@ -7,6 +11,6 @@
 
 🎧 Enjoy high-quality music downloads with fast speed and no hassle!  
 Made by: ChatGPT 😂
-
-download ffmpeg manually in https://www.gyan.dev/ffmpeg/builds/
-pip install yt-dlp
+  
+download ffmpeg manually in https://www.gyan.dev/ffmpeg/builds/  
+pip install yt-dlp  
